@@ -1,6 +1,6 @@
 # Study
 ***
-## [1. Tip](/Tractor/readme.md)
+## [1. Tip](/Tip/readme.md)
 ## [2. Maya](/Maya/readme.md)
 ## [3. Nuke](/Nuke/readme.md)
 ## [4. Houdini](/Houdini/readme.md)
