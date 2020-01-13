@@ -1,5 +1,6 @@
 # SM_Study
 ***
+python readme 작성중..  
 ### ☆[Tip](/Tip/readme.md)
 ### ★[Issue](/Issue/readme.md)
 ### -- Program --
