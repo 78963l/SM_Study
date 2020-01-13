@@ -14,6 +14,6 @@ keyword.kwlist
 dir()  
   
 - 문자열 포매팅  
-str = 'Hello'
+str = 'Hello'  
 '%s Python' % str  
   
