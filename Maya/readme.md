@@ -3,5 +3,5 @@
 * * *
 ### create
 * * *
-- cube 생성
+- cube 생성  
 cmds.polyCube(n='Cube')
