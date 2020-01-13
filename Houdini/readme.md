@@ -1,8 +1,7 @@
-#Houdini
-## [(main)](/readme.md) 
+## Houdini
+[(main)](/readme.md) 
 * * *
-create
--------------
+### create
 * * *
 - cube 생성
 Geo = hou.node('obj/').createNode("geo")
