@@ -1,7 +1,7 @@
 ## Maya
 [(main)](/readme.md) 
 * * *
-create
+### create
 -------------
 * * *
 - cube 생성
