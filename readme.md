@@ -15,11 +15,11 @@
 ### -- Language --
 ##### [1. C](/C/readme.md)
 ##### [2. C++](/C++/readme.md)
-##### [3. C#](/C#/readme.md)
+##### [3. C#](/C_/readme.md)
 ##### [4. Java](/Java/readme.md)
 ##### [4. JavaScript](/JavaScript/readme.md)
 ##### [5. TypeScript](/TypeScript/readme.md)
 ##### [6. Python](/Python/readme.md)
-##### [7. GoLang](/GoLang/readme.md)
+##### [7. GoLang](/Golang/readme.md)
 ##### [8. Html](/Html/readme.md)
 ##### [9. Jsp](/Jsp/readme.md)
