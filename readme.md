@@ -1,4 +1,4 @@
-# SMStudy
+# SM_Study
 ***
 ### ☆[Tip](/Tip/readme.md)
 ### ★[Issue](/Issue/readme.md)
