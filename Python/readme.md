@@ -1,25 +1,25 @@
 # Python
 ### [(main)](/readme.md) 
 * * *
- :large_blue_diamond:  **주석,변수,Print등 한글사용시 추가해야함.** :large_blue_diamond:  
+ :large_blue_diamond:**주석,변수,Print등 한글사용시 추가해야함.**:large_blue_diamond:  
 #coding: euc-kr  또는 #coding: utf-8    
 <br>  
   
- :large_blue_diamond: **예약어 확인** :large_blue_diamond:  
+ :large_blue_diamond:**예약어 확인**:large_blue_diamond:  
 import keyword  
 keyword.kwlist  
 <br>  
   
-- **현재 사용 변수 이름알기 ---------------------------------------------------------------**  
+ :large_blue_diamond:**현재 사용 변수 이름알기**:large_blue_diamond:  
 dir()  
 <br>  
   
-- **문자열 포매팅 ---------------------------------------------------------------**  
+:large_blue_diamond:**문자열 포매팅**:large_blue_diamond:  
 str = 'Hello'  
 '%s Python' % str  
 <br>  
   
-- **대문자 관련 메소드 ---------------------------------------------------------------**  
+:large_blue_diamond:**대문자 관련 메소드**:large_blue_diamond:  
 1. **첫문자만 영문으로 변경**  
 s = "hello Python"  
 s.capitalize()  
@@ -52,7 +52,7 @@ s.swapcase()
 출력) "HeLLo WorLD"  
 <br>  
   
-- **문자 검색 관련 메소드 ---------------------------------------------------------------**  
+:large_blue_diamond:**문자 검색 관련 메소드**:large_blue_diamond:  
 1. **단어가 몇개가 있는지 개수를 나타냄**  
 s = "This is Python"  
 s.count('this')  
@@ -67,7 +67,7 @@ s.index('Python')
 ※ 차이점 (없으면 -1을 반환하지 않고 에러를 냄)  
 <br>  
   
- - **문자 치환 관련 메소드 **  
+:large_blue_diamond:**문자 치환 관련 메소드 **:large_blue_diamond:  
 1. **양쪽 공백 지우기, 원하는 문자 지우기**  
 s = " center "  
 s.strip()  
@@ -82,7 +82,7 @@ s.replace("Hello", "Maya")
 출력) "Maya Python"  
 <br>  
   
-- **문자 분리 관련 메소드 ---------------------------------------------------------------**  
+:large_blue_diamond:**문자 분리 관련 메소드**:large_blue_diamond:  
 1. **list 문자열을 ':' 기준으로 조합**  
 s = "Hello Python"  
 ':'.join(s.split())  
@@ -94,7 +94,7 @@ s.split(y)
 출력) ["Hello P","thon"]  
 <br>  
   
-- **기타 문자 메소드**  
+:large_blue_diamond:**기타 문자 메소드**:large_blue_diamond:  
 1. **양쪽을 공백으로 채우며 50개 문자를 중앙기준으로 배열**  
 s = "Hello Python"  
 s.center(50)  
@@ -136,18 +136,18 @@ s.rjust(50, '-')
 출력) "0012"  
 <br>  
   
-- **조건문 관계연산 지원**  
+:large_blue_diamond:**조건문 관계연산 지원**:large_blue_diamond:  
 1 < 3 < 5  
 출력) True  
 ※ 단 mel이나 Maya expression은 풀어써줘야함 1 < 3 && 3 < 5  
 <br>  
   
-- **not 논리 연산**  
+:large_blue_diamond:**not 논리 연산**:large_blue_diamond:  
 not 1 < 4  
 출력) False  
 <br>  
   
-- **in 관계 연산**  
+:large_blue_diamond:**in 관계 연산**:large_blue_diamond:  
 st = "abcd"  
 'a' in st  
 출력) True  
@@ -156,12 +156,12 @@ b = [1,2,3,4]
 출력) True  
 <br>  
   
-- **변수 지우기**  
+:large_blue_diamond:**변수 지우기**:large_blue_diamond:  
 a = 1  
 del a  
 <br>  
   
-- **객체 치환**  
+:large_blue_diamond:**객체 치환**:large_blue_diamond:  
 1. Call By Reference  
 a = [1, 2, 3]  
 b = [4, a, 'b']  
@@ -179,5 +179,5 @@ a출력) [1, 10, 3]
 b출력) [1, 2, 3]  
 <br>  
    
-- **시퀀스 자료형**  
+:large_blue_diamond:**시퀀스 자료형**:large_blue_diamond:  
 

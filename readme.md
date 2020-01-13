@@ -1,8 +1,8 @@
 # SM_Study
 ***
 python readme 작성중..  
-### ☆[Tip](/Tip/readme.md)
-### ★[Issue](/Issue/readme.md)
+### :star:[Tip](/Tip/readme.md):star:
+### :star:[Issue](/Issue/readme.md):star:
 ### -- Program --
 ##### [1. Maya](/Maya/readme.md)
 ##### [2. Nuke](/Nuke/readme.md)
