@@ -1,7 +1,7 @@
 # Python
 ### [(main)](/readme.md) 
 * * *
- :large_blue_diamond:**주석,변수,Print등 한글사용시 추가해야함.**:large_blue_diamond:  
+ :large_blue_diamond:**주석,변수,Print등 한글사용시 추가해야함**:large_blue_diamond:  
 #coding: euc-kr  또는 #coding: utf-8    
 <br>  
   
@@ -67,7 +67,7 @@ s.index('Python')
 ※ 차이점 (없으면 -1을 반환하지 않고 에러를 냄)  
 <br>  
   
-:large_blue_diamond:**문자 치환 관련 메소드 **:large_blue_diamond:  
+:large_blue_diamond:**문자 치환 관련 메소드**:large_blue_diamond:  
 1. **양쪽 공백 지우기, 원하는 문자 지우기**  
 s = " center "  
 s.strip()  

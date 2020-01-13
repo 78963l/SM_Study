@@ -1,6 +1,6 @@
 # SM_Study
 ***
-python readme 작성중..  
+## :exclamation:python readme 작성중..  
 ### :star:[Tip](/Tip/readme.md):star:
 ### :star:[Issue](/Issue/readme.md):star:
 ### -- Program --
