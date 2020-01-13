@@ -1,3 +1,3 @@
 # 3DEqualizer
-## [(main)](/readme.md) 
+### [(main)](/readme.md) 
 * * *
