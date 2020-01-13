@@ -1,11 +1,11 @@
 # Python
 ### [(main)](/readme.md) 
 * * *
-- :large_blue_diamond: **주석,변수,Print등 한글사용시 추가해야함.**  
+ :large_blue_diamond:  **주석,변수,Print등 한글사용시 추가해야함.** :large_blue_diamond:  
 #coding: euc-kr  또는 #coding: utf-8    
 <br>  
   
-- **예약어 확인 ---------------------------------------------------------------**  
+ :large_blue_diamond: **예약어 확인** :large_blue_diamond:  
 import keyword  
 keyword.kwlist  
 <br>  
