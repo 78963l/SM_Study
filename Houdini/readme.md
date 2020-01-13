@@ -3,7 +3,7 @@
 * * *
 ### create
 * * *
-- cube 생성
-Geo = hou.node('obj/').createNode("geo")
-Box = Geo.createNode('box')
-Box.setDisplayFlag(True)
+- cube 생성  
+Geo = hou.node('obj/').createNode("geo")  
+Box = Geo.createNode('box')  
+Box.setDisplayFlag(True)  
