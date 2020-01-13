@@ -1,4 +1,4 @@
-# Study
+# SMStudy
 ***
 ### ☆[Tip](/Tip/readme.md)
 ### ★[Issue](/Issue/readme.md)
@@ -23,4 +23,3 @@
 ##### [7. GoLang](/GoLang/readme.md)
 ##### [8. Html](/Html/readme.md)
 ##### [9. Jsp](/Jsp/readme.md)
-
