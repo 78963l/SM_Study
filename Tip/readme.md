@@ -13,8 +13,7 @@
 ***
 ### -- Language --  
 * [C](#C-Lang)
-* [C++](#C++-Lang)
->##### C++  
+* [C++](#C++-Lang) 
 >##### C#  
 >##### Java  
 >##### JavaScript  
