@@ -2,7 +2,7 @@
 ### [(main)](/readme.md) 
 ***
 ### -- Program --
-* [Maya](#MAYA)
+* [Maya](#1-Maya)
 * [Nuke](#NUKE)
 * [Houdini](#HOUDINI)
 * [3DEqualizer](#3DEQUALIZER)
@@ -23,25 +23,25 @@
 >##### Html  
 >##### Jsp  
 ***
-#### 1. maya
+#### 1. Maya
 ***
-#### NUKE
+#### 2. Nuke
 ***
-#### HOUDINI
+#### 3. Houdini
 ***
-#### 3DEQUALIZER
+#### 4. 3DEqualizer
 ***
-#### TRACTOR
+#### 5. Tractor
 ***
-#### UNITY3D
+#### 6. Unity3D
 ***
-#### UNREAL
+#### 7. Unreal
 ***
-#### ANDROIDSTUDIO
+#### 8. AndroidStudio
 ***
-##### C
+##### 9. C
 ***
-##### C++
+##### 10. C++
 ***
 ##### 11. C#  
 ***
