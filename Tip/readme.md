@@ -3,8 +3,8 @@
 ***
 ### -- Program --
 * [Maya](#MAYA)
->#### Nuke  
->#### Houdini  
+* [Nuke](#NUKE)
+* [Houdini](#HOUDINI)
 >#### 3DEqualizer  
 >#### Tractor  
 >#### Unity3D  
@@ -25,9 +25,9 @@
 ***
 #### MAYA
 ***
-#### 2. Nuke  
+#### NUKE  
 ***
-#### 3. Houdini  
+#### HOUDINI  
 ***
 #### 4. 3DEqualizer  
 ***
