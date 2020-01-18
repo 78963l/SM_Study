@@ -6,7 +6,6 @@
 * [Nuke](#NUKE)
 * [Houdini](#HOUDINI)
 * [3DEqualizer](#3DEQUALIZER)
->#### 3DEqualizer  
 >#### Tractor  
 >#### Unity3D  
 >#### Unreal  
@@ -26,11 +25,11 @@
 ***
 #### MAYA
 ***
-#### NUKE  
+#### NUKE
 ***
-#### HOUDINI  
+#### HOUDINI
 ***
-#### 3DEQUALIZER  
+#### 3DEQUALIZER
 ***
 #### 5. Tractor  
 ***
