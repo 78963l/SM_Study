@@ -12,7 +12,7 @@
 * [AndroidStudio](#ANDROIDSTUDIO)
 ***
 ### -- Language --  
-* [C](#C-Lang)
+* [C](#C)
 * [C++](#C-Lang)
 >##### C#  
 >##### Java  
@@ -39,7 +39,7 @@
 ***
 #### ANDROIDSTUDIO
 ***
-##### C-Lang
+##### C
 ***
 ##### C++-Lang
 ***
