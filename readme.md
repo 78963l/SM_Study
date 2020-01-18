@@ -1,4 +1,4 @@
-# SM_Study
+## :memo: SM_Study
 ***
 ## :exclamation:python readme 작성중..  
 ### :star:[Tip](/Tip/readme.md):star:
