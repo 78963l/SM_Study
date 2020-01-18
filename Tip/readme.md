@@ -2,7 +2,7 @@
 ### [(main)](/readme.md) 
 ***
 ### -- Program --
-* [Maya](#1.-Maya)
+* [Maya](#MAYA)
 >#### Nuke  
 >#### Houdini  
 >#### 3DEqualizer  
@@ -23,7 +23,7 @@
 >##### Html  
 >##### Jsp  
 ***
-#### 1.-Maya
+#### MAYA
 ***
 #### 2. Nuke  
 ***
