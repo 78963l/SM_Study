@@ -5,6 +5,7 @@
 * [Maya](#MAYA)
 * [Nuke](#NUKE)
 * [Houdini](#HOUDINI)
+* [3DEqualizer](#3DEQUALIZER)
 >#### 3DEqualizer  
 >#### Tractor  
 >#### Unity3D  
@@ -29,7 +30,7 @@
 ***
 #### HOUDINI  
 ***
-#### 4. 3DEqualizer  
+#### 3DEQUALIZER  
 ***
 #### 5. Tractor  
 ***
