@@ -2,26 +2,26 @@
 ### [(main)](/readme.md) 
 ***
 ### -- Program --
-* [Maya](#1-Maya)
-* [Nuke](#NUKE)
-* [Houdini](#HOUDINI)
-* [3DEqualizer](#3DEQUALIZER)
-* [Tractor](#TRACTOR)
-* [Unity3D](#UNITY3D)
-* [Unreal](#UNREAL)
-* [AndroidStudio](#ANDROIDSTUDIO)
+* [Maya](#1-maya)
+* [Nuke](#2-nuke)
+* [Houdini](#3-houdini)
+* [3DEqualizer](#4-3dequalizer)
+* [Tractor](#5-tractor)
+* [Unity3D](#6-unity3d)
+* [Unreal](#7-unreal)
+* [AndroidStudio](#8-androidstudio)
 ***
 ### -- Language --  
-* [C](#C-Lang)
-* [C++](#C++)
->##### C#  
->##### Java  
->##### JavaScript  
->##### TypeScript  
->##### Python  
->##### GoLang  
->##### Html  
->##### Jsp  
+* [C](#9-c)
+* [C++](#10-c)
+* [C#](#11-c)
+* [Java](#12-java)
+* [JavaScript](#13-javascript)
+* [TypeScript](#14-typescript)
+* [Python](#15-python)
+* [GoLang](#16-golang)
+* [Html](#17-html)
+* [Jsp](#18-jsp)
 ***
 #### 1. Maya
 ***
@@ -49,7 +49,7 @@
 ***
 #### 13. JavaScript  
 ***
-#### 14. ypeScript  
+#### 14. TypeScript  
 ***
 #### 15. Python  
 :large_blue_diamond:**메모리 관리를 따로 안해줘도 됨**:large_blue_diamond:  
