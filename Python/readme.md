@@ -474,11 +474,11 @@ all_grp 출력) {'a': {'grp2':{sphere1:nurbs, "sphere2":nurbs, "sphere3":nurbs},
 all_grp['a']['grp1'] 출력) {'box1':'mesh','box2':'mesh','box3':'mesh'}  
     
 :large_blue_diamond:**리스트 내장**:large_blue_diamond:  
-for문 문법  
+**for문 문법**  
 for <변수> in <시퀀스>:  
 <명령문>  
 ***
-while문 문법  
+**while문 문법**  
 while <조건>:  
 <명령문>  
 ***
@@ -492,7 +492,7 @@ print x
 출력) num2 num4 num6 num8  
     
 :large_blue_diamond:**제어문**:large_blue_diamond:  
-if문 문법  
+**if문 문법**  
 if <조건1>:  
 <명령문>  
 elif <조건2>:  
@@ -502,7 +502,7 @@ else:
 ※ break(만나는 순간 종료), continue(만나는 순간 아래 명령은 실행하지 않고 다시 반복) 가 있음.  
     
 :large_blue_diamond:**조건선언**:large_blue_diamond:  
-조건선언 문법  
+**조건선언 문법**  
 <변수> = <값1> if <조건> else <값2>  
 ex) v_ = 'true' if 3 < 4 else 'false'  
 v_ 출력) true  
@@ -511,17 +511,108 @@ v_ = 'true'
 else:  
 v_ = 'false'  
 ***
-:small_orange_diamond:리스트내장:small_orange_diamond:  
-리스트 안에 for문 명령을 포함  
+:large_blue_diamond:**리스트내장**:large_blue_diamond:  
+**리스트 안에 for문 명령을 포함**  
 list_ = ['a1','2','a3','a4','5']  
 v_ = [x for x in list_ if x[0] == 'a']  
 v_ 출력) ['a1', 'a3', 'a4']  
 ※ 리스트내장안에 있는 if조건시 else는 사용 불가!!  
 ***
-if 조건에는 bool()이 생략 되어있다.  
+**if 조건에는 bool()이 생략 되어있다.**  
 if bool(조건):  
 ex) if 0:  
 print("true")  
 else:  
 print("false")  
 출력) false  
+    
+:large_blue_diamond:**함수**:large_blue_diamond:  
+**함수 문법**  
+def <함수이름>(<인자>):  
+<명령문>  
+return 값  
+※인자와 return 값을 안줘도 됨.  
+***
+def f_():  
+return  
+※ return 값은 None이 됨.  
+***
+def f_():  
+return 1, 2  
+f_()  
+(1,2)  
+※ return 값은 Tuple이 됨.  
+    
+:large_blue_diamond:**지역변수, 전역변수**:large_blue_diamond:  
+1. **변수 확인**  
+a_ = 1  
+def f_():  
+ b_ = 2  
+ print locals()  
+ print globals()  
+     
+2. **함수안에서 전역변수 사용**  
+a_ = 3
+def f_():  
+global a_  
+a_ += 2  
+return a_  
+a_ 출력) 3  
+f_()
+a_ 출력) 5  
+    
+3. **재귀함수**  
+a_ = 1  
+def f_():  
+print("function")  
+global a_  
+a_ += 1  
+if(a < 3):
+f_()  
+print(f_())  
+출력) function function None  
+※ 마지막 None이 나오는 이유는 return 값이 없는 함수이기 때문이다.  
+    
+4. **인수전달**  
+- **가변인수 전달**  
+인수개수가 몇개인지 모를때 사용.  
+def f_(*var_):  
+return var_  
+f_(1)  
+출력) (1,)  
+f_(1,2,3)  
+출력) (1,2,3)  
+    
+- **키워드 인수 전달**  
+def key_word(MAYA_, max_):  
+return MAYA_, max_  
+key_word(max_ = 'mxs', MAYA_ = 'Python')  
+출력) ('Python', 'mxs')  
+    
+5. **람다함수**  
+한줄의 함수로 return 명령없이 return 함  
+**문법**  
+lambda <인수> : <리턴방식>  
+myf = lambda a, b : a + b  
+myf(1, 2)  
+출력) 3  
+    
+6. **함수 인자 넘기기**  
+- **list 또는 Tuple로 인수 넘기기**  
+def f_(a, b, c):  
+retrun a+b+c  
+li_ = [2, 3, 4]  
+f_(*li_)  
+출력) 9  
+tu_ = (100, 200, 300)  
+f_(*tu_)  
+출력) 600  
+    
+- **사전형으로 인수 넘기기**  
+def f_(a, b, c):  
+return a+b, b+c, c+a  
+dic_ = {'a':1, 'b':2, 'c':3}  
+f_(**dic_)  
+출력) (3, 5, 4)  
+    
+:large_blue_diamond:**모듈**:large_blue_diamond:  
