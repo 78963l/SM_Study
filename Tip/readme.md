@@ -67,7 +67,7 @@ a 출력) [5,2,3]
 b 출력) [5,2,3]  
     
 2. ShallowCopy  
-import copy
+import copy  
 a = [1,2,3]  
 b = copy.copy(a)  
 a[0] = 5  
