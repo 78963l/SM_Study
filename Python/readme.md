@@ -406,4 +406,70 @@ obj.has_key("Cube")
     
 9. **특정 key들을 한번에 default값으로 설정**  
 obj = dict.fromkeys(["B1","B2","B3"], "mesh")  
-obj 출력) {("B1": "mesh", "B2": "mesh", "B3": "mesh"}
+obj 출력) {("B1": "mesh", "B2": "mesh", "B3": "mesh"}  
+    
+10. **사전에 사전추가**  
+a = {"1":"one","2":"two"}  
+b = {"3":"three","4":"four"}  
+a.update(b)
+a 출력) {'1': 'one', '2': 'two', '3': 'three', '4': 'four'}  
+    
+11. **사전 지우기**  
+a.clear()  
+    
+12. **사전 대입 (원본, 참조 동일o)**  
+a = {"1":"one","2":"two"}  
+a = b  
+a["2"]="이"  
+a 출력) {"1":"one","2":"이"}  
+b 출력) {"1":"one","2":"이"}  
+    
+13. **사전 대입 (원본, 참조 동일x)**    
+a = {"1":"one","2":"two"}  
+a = b.copy()  
+a["2"]="이"  
+a 출력) {"1":"one","2":"이"}  
+b 출력) {"1":"one","2":"two"}  
+    
+:large_blue_diamond:**시퀀스 자료형 변환**:large_blue_diamond:  
+:small_orange_diamond:list <-> Tuple:small_orange_diamond:  
+1. **튜플 -> 리스트 변환**  
+tu_ = ('a','b','c')  
+li_ = list(tu_)  
+li_ 출력) ['a','b','c']  
+    
+2. **리스트 -> 튜플 변환**  
+li_ = ['a','b','c']  
+tu_ = tuple(li_)  
+tu_ 출력) ('a','b','c')  
+    
+:small_orange_diamond:dictionary Type Exchange:small_orange_diamond:  
+1. **리스트 -> 리스트튜플 변환**  
+a_ = ['1','2','3']  
+b_ = ['one','two','three']  
+zip(a_, b_)  
+출력) [('1', 'one'), ('2', 'two'), ('3', 'three')]  
+    
+2. **리스트 -> 사전 변환**  
+a_ = ['1','2','3']  
+b_ = ['one','two','three']  
+dic(zip(a_, b_))
+출력) ['1':'one', '2':two, '3':three]  
+    
+:large_blue_diamond:**시퀀스 중첩 자료**:large_blue_diamond:  
+1. **사전안에 리스트 중첩**  
+all = dict.fromkeys(['group_A', 'group_B'])  
+all['group_A'] = ['box1', 'box2']  
+all['group_B'] = ['sphere1', 'sphere2']  
+all 출력) {'group_A': ['box1', 'box2'], 'group_B': ['sphere1', 'sphere2']}  
+all['group_B'][1] 출력) 'sphere2'  
+    
+2. **사전안에 사전 중첩**  
+all_grp = dict.fromkeys(['a','b']  
+all_grp['a'] = dict.fromkeys(['grp1','grap2'])  
+all_grp['b'] = dict.fromkeys(['grp3','grap4'])  
+all_grp['a']['grp1'] = dict.fromkeys(['box1', 'box2', 'box3'], 'mesh')  
+all_grp['a']['grp2'] = dict.fromkeys(['sphere1', 'sphere2', 'sphere3'], 'nurbs')  
+all_grp 출력) {'a': {'grp2':{sphere1:nurbs, "sphere2":nurbs, "sphere3":nurbs}, 'grp1':{'box1':'mesh','box2':'mesh','box3':'mesh'}}, 'b': {'grp3':None, 'grp4':None}}  
+all_grp['a']['grp1'] 출력) {'box1':'mesh','box2':'mesh','box3':'mesh'}  
+    
