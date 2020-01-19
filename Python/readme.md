@@ -322,14 +322,14 @@ li.pop()
 li 출력) [1,2,3,4,5]  
     
 :large_blue_diamond:**Tuple**:large_blue_diamond:  
-:small_orange_diamond:연산:small_orange_diamond:  
+1. **연산**  
 t = ('a','b','c','d')  
 t + ('e','f')  
 출력) ('a','b','c','d','e','f')  
 t * 2  
 출력) ('a','b','c','d','a','b','c','d')  
     
-:small_orange_diamond:포매팅:small_orange_diamond:  
+2. **포매팅**  
 h,m = "hello", "maya"  
 h 출력) "hello"  
 m 출력) "maya"  
@@ -369,20 +369,20 @@ obj.keys()
 obj.values()  
 출력) ["mesh","nurbs","mesh"]  
     
-3.**<(key와 value)를 리스트형과 튜플형으로 받기>**  
+3. **<(key와 value)를 리스트형과 튜플형으로 받기>**  
 obj.items()  
 출력) [("Cube":"mesh"), ("Shpere":"nurbs"), ("Cone":"mesh")]  
     
-4.**<key값 유무>:**  
+4. **<key값 유무>:**  
 "Box" in obj  
 출력) True  
 ※ value값 유무는 다른방식으로 해야함.  
     
-5.**<value값 유무>**  
+5. **<value값 유무>**  
 "mesh" in obj.values()  
 출력) True  
     
-6.**<검색>**  
+6. **<검색>**  
 obj.get("Shpere")  
 출력) nurbs  
 ※ 없는 값은 None으로 리턴됨.(기본방식(에러)과 다름)  
@@ -392,7 +392,7 @@ obj.get("Hex", "mesh")
 ob.setdefault("Hex", "mesh")
 ※ 없는 값이면 지정한 value로 나옴.(단 사전엔 추가o)  
     
-7.**<삭제>**  
+7. **<삭제>**  
 obj.popitem()  
 출력) ("Cone", "mesh")  
 ※ 사전에는 지워짐.  
@@ -400,9 +400,10 @@ obj.pop("Shpere")
 출력) "nurbs"  
 ※ 사전에는 지워짐.  
     
-8.**<존재유무>**  
+8. **<존재유무>**  
 obj.has_key("Cube")  
 출력) True  
-:small_orange_diamond:<특정 key들을 한번에 default값으로 설정>:small_orange_diamond:  
+    
+9. **<특정 key들을 한번에 default값으로 설정>**  
 obj = dict.fromkeys(["B1","B2","B3"], "mesh")  
 obj 출력) {("B1": "mesh", "B2": "mesh", "B3": "mesh"}
