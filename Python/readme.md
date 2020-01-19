@@ -180,7 +180,8 @@ b출력) [1, 2, 3]
 <br>  
    
 :large_blue_diamond:**시퀀스 자료형**:large_blue_diamond:  
-1. 문자열  
+
+:small_orange_diamond: 문자열 :small_orange_diamond:  
 [<시작수>:<끝수>:간격수>]  
 s="hello"  
 s[1]  
@@ -199,69 +200,58 @@ h e l l o
 0 1 2 3 4 5
 -5 -4 -3 -2 -1 0  
   
-2. 리스트  
-<선언>  
+:small_orange_diamond:리스트:small_orange_diamond:  
+1. <선언>  
 li = [1,2,3]  
-<br>
-<개수>  
+2. <개수>  
 len(li)  
 출력)3  
-<br>
-<여러개 추가>  
+3. <여러개 추가>  
 li + [4,5,6]  
 출력) [1,2,3,4,5,6]  
 li 출력) [1,2,3]  
 li += [4,5,6]  
 출력) [1,2,3,4,5,6]  
 li 출력) [1,2,3,4,5,6]  
-<br>
-<한개 추가>  
+4. <한개 추가>  
 li.append(7)  
 li 출력) [1,2,3,4,5,6,7]  
-<br>  
-<자르기>  
+5. <자르기>  
 li[1:3]  
 출력) [2,3]  
 li[::2]  
 출력) [1,3,5,7]  
 li[::3]  
 출력) [1,4,7]  
-<br>
-<치환>  
+6. <치환>  
 li[1] = 10  
 li 출력) [1,10,3,4,5,6,7]  
-<br>
-<리스트 자료복사하여 넣기>  
+7. <리스트 자료복사하여 넣기>  
 li * 2  
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7]  
 li *= 2  
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
-<br>
-<자료있는지 검사>
+8. <자료있는지 검사>
 10 in li  
 출력) True  
-<br>
-<자료중복 확인>  
+9. <자료중복 확인>  
 li.count(4)  
 출력) 2  
-<br>
-<인덱스로 삭제>  
+10. <인덱스로 삭제>  
 del li[1]  
 li 출력) li 출력) [1,3,4,5,6,7,1,10,3,4,5,6,7]  
-<br>
 <slicing 으로 삭제>  
 li[4:6]  
 출력)[6,7]  
 li[4:6] = []  
 li 출력) [1,3,4,5,1,10,3,4,5,6,7]  
-<br>
-<특정자료 index 구하기>  
+11. <특정자료 index 구하기>  
 li.index(10)  
 출력) 7  
 
-3. Range  
+:small_orange_diamond:Range:small_orange_diamond:  
 range(<시작수>:<끝수>:<증가수>)  
 range(5)  
 for문 출력) [0,1,2,3,4]  
@@ -276,7 +266,7 @@ range(0,-5,-1)
 for문 출력) [0,-1,-2,-3,-4]  
 <br>
 
-4. 중첩리스트  
+:small_orange_diamond:중첩리스트:small_orange_diamond:  
 li1 = ['a','b','c']  
 li2 = [1,2,li1,3,4]  
 li2 출력) [1,2,['a','b','c'],3,4]  
@@ -284,53 +274,47 @@ li2[2][1] 출력) "b"
 li2[3] = [11,22,33]  
 li2 출력) [1,2,['a','b','c'],[11,22,33]],4]  
 <br>
-5. 리스트 메소드  
-<리스트 인덱스로 추가>  
+:small_orange_diamond:리스트 메소드:small_orange_diamond:  
+1. <리스트 인덱스로 추가>  
 li = ['a','b','c','e']  
 li.insert(3, 'd')  
 li 출력) ['a','b','c','d','e']  
-<br>
-<리스트 정렬 반대로>  
+2. <리스트 정렬 반대로>  
 li.reverse()
 li 출력) ['e','d','c','b','a']  
 ※ li.sort(reverse=True) 동일.  
-<br>
-<순서대로 정렬>  
+3. <순서대로 정렬>  
 li.sort()  
 li 출력) ['a','b','c','d','e']  
 ※ sort는 리턴값이 없다.  
-
-<br>
-<특정 자료 지우기>  
+4. <특정 자료 지우기>  
 li.remove('c')  
 li 출력) ['a','b','d','e']  
-<br>
-<여러개추가>  
+5. <여러개추가>  
 li.extend(['f','g'])  
 li 출력) ['a','b','d','e','f','g']  
-<br>
-<list형으로 추가>  
+6. <list형으로 추가>  
 li.aapend(['f','g'])  
 li 출력) ['a','b','d','e',['f','g']]  
 <br>
-6. 리스트 스택  
-<데이터 추가>  
+:small_orange_diamond:리스트 스택:small_orange_diamond:  
+1. <데이터 추가>  
 li = [1,2,3,4,5]  
 li.append(6)  
 li 출력) [1,2,3,4,5,6]  
-<데이터 빼기>  
+2. <데이터 빼기>  
 li.pop()  
 li 출력) [1,2,3,4,5]  
 
 :large_blue_diamond:**Tuple**:large_blue_diamond:  
-1. 연산  
+:small_orange_diamond:연산:small_orange_diamond:  
 t = ('a','b','c','d')  
 t + ('e','f')  
 출력) ('a','b','c','d','e','f')  
 t * 2  
 출력) ('a','b','c','d','a','b','c','d')  
 <br>
-2. 포매팅  
+:small_orange_diamond:포매팅:small_orange_diamond:  
 h,m = "hello", "maya"  
 h 출력) "hello"  
 m 출력) "maya"  
@@ -338,51 +322,43 @@ print "%s~~ %s!!!" % (h, m)
 출력) hello~~ maya!!!  
   
 :large_blue_diamond:**Dictionary**:large_blue_diamond:  
-1. 연산  
+:small_orange_diamond:연산:small_orange_diamond:  
 obj = {"Cube":"mesh", "Shpere":"nurbs", "Cone":"mesh"}  
   
-2. 검색  
-<검색>
+:small_orange_diamond:검색:small_orange_diamond:  
+1. <검색>
 obj["Cube"]  
 출력) "mesh"  
 ※key를 넣어야함.(없으면 에러를 냄)  
-<br>
-<치환>  
+2. <치환>  
 obj["Cube"] = "nurbs"  
 obj 출력) {"Cube":"nurbs", "Shpere":"nurbs", "Cone":"mesh"}  
-<br>
-<삭제>  
+3. <삭제>  
 del obj["Cone"]  
 obj 출력) {"Cube":"nurbs", "Shpere":"nurbs"}  
-<br>
-<자료 개수>
+4. <자료 개수>  
 len(obj)  
 출력) 2  
   
 :large_blue_diamond:**Dictionary Method**:large_blue_diamond:  
 obj = {"Cube":"mesh", "Shpere":"nurbs", "Cone":"mesh"}  
-1. <key의 리스트 받기>  
+:small_orange_diamond:<key의 리스트 받기>:small_orange_diamond:  
 obj.keys()  
 출력) ["Cube","Shpere","Cone"]  
-<br>
-2. <value의 리스트 받기>  
+:small_orange_diamond:<value의 리스트 받기>:small_orange_diamond:  
 obj.values()  
 출력) ["mesh","nurbs","mesh"]  
-<br>
-3. <(key와 value)를 리스트형과 튜플형으로 받기>  
+:small_orange_diamond:<(key와 value)를 리스트형과 튜플형으로 받기>:small_orange_diamond:  
 obj.items()  
 출력) [("Cube":"mesh"), ("Shpere":"nurbs"), ("Cone":"mesh")]  
-<br>
-4. <key값 유무>  
+:small_orange_diamond:<key값 유무>:small_orange_diamond:  
 "Box" in obj  
 출력) True  
 ※ value값 유무는 다른방식으로 해야함.  
-<br>
-5. <value값 유무>  
+:small_orange_diamond:<value값 유무>:small_orange_diamond:  
 "mesh" in obj.values()  
 출력) True  
-<br>
-6. <검색>  
+:small_orange_diamond:<검색>:small_orange_diamond:  
 obj.get("Shpere")  
 출력) nurbs  
 ※ 없는 값은 None으로 리턴됨.(기본방식(에러)과 다름)  
@@ -391,20 +367,16 @@ obj.get("Hex", "mesh")
 ※ 없는 값이면 지정한 value로 나옴.(단 사전엔 추가x)  
 ob.setdefault("Hex", "mesh")
 ※ 없는 값이면 지정한 value로 나옴.(단 사전엔 추가o)  
-<br>
-7. <삭제>  
+:small_orange_diamond:<삭제>:small_orange_diamond:  
 obj.popitem()  
 출력) ("Cone", "mesh")  
 ※ 사전에는 지워짐.  
 obj.pop("Shpere")  
 출력) "nurbs"  
 ※ 사전에는 지워짐.  
-<br>
-8. <존재유무>  
+:small_orange_diamond:<존재유무>:small_orange_diamond:  
 obj.has_key("Cube")  
 출력) True  
-<br>
-9. <특정 key들을 한번에 default값으로 설정>  
+:small_orange_diamond:<특정 key들을 한번에 default값으로 설정>:small_orange_diamond:  
 obj = dict.fromkeys(["B1","B2","B3"], "mesh")  
 obj 출력) {("B1": "mesh", "B2": "mesh", "B3": "mesh"}
-
