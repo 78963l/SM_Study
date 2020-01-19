@@ -236,7 +236,7 @@ li 출력) [1,10,3,4,5,6,7]
 li * 2  
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7]  
-li *= 2  
+li * = 2  
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
     
@@ -476,19 +476,19 @@ all_grp['a']['grp1'] 출력) {'box1':'mesh','box2':'mesh','box3':'mesh'}
 :large_blue_diamond:**리스트 내장**:large_blue_diamond:  
 **for문 문법**  
 for <변수> in <시퀀스>:  
-<명령문>  
+　<명령문>  
 ***
 **while문 문법**  
 while <조건>:  
-<명령문>  
+　<명령문>  
 ***
 li_ = [x for x in range(2, 10, 2)]  
 for x in li_:  
-print x  
+　print x  
 출력) 2 4 6 8  
 li_ = ["num:" + x for x in range(2, 10, 2)]  
 for x in li_:  
-print x  
+　print x  
 출력) num2 num4 num6 num8  
     
 :large_blue_diamond:**제어문**:large_blue_diamond:  
@@ -507,9 +507,9 @@ else:
 ex) v_ = 'true' if 3 < 4 else 'false'  
 v_ 출력) true  
 if 3 < 4:  
-v_ = 'true'  
+　v_ = 'true'  
 else:  
-v_ = 'false'  
+　v_ = 'false'  
 ***
 :large_blue_diamond:**리스트내장**:large_blue_diamond:  
 **리스트 안에 for문 명령을 포함**  
@@ -538,7 +538,7 @@ return
 ※ return 값은 None이 됨.  
 ***
 def f_():  
-return 1, 2  
+　return 1, 2  
 f_()  
 (1,2)  
 ※ return 값은 Tuple이 됨.  
@@ -547,16 +547,16 @@ f_()
 1. **변수 확인**  
 a_ = 1  
 def f_():  
- b_ = 2  
- print locals()  
- print globals()  
+　b_ = 2  
+　print locals()  
+　print globals()  
      
 2. **함수안에서 전역변수 사용**  
 a_ = 3
 def f_():  
-global a_  
+　global a_  
 a_ += 2  
-return a_  
+　return a_  
 a_ 출력) 3  
 f_()
 a_ 출력) 5  
@@ -564,11 +564,11 @@ a_ 출력) 5
 3. **재귀함수**  
 a_ = 1  
 def f_():  
-print("function")  
+　print("function")  
 global a_  
 a_ += 1  
 if(a < 3):
-f_()  
+　f_()  
 print(f_())  
 출력) function function None  
 ※ 마지막 None이 나오는 이유는 return 값이 없는 함수이기 때문이다.  
@@ -577,7 +577,7 @@ print(f_())
 - **가변인수 전달**  
 인수개수가 몇개인지 모를때 사용.  
 def f_(*var_):  
-return var_  
+　return var_  
 f_(1)  
 출력) (1,)  
 f_(1,2,3)  
@@ -585,7 +585,7 @@ f_(1,2,3)
     
 - **키워드 인수 전달**  
 def key_word(MAYA_, max_):  
-return MAYA_, max_  
+　return MAYA_, max_  
 key_word(max_ = 'mxs', MAYA_ = 'Python')  
 출력) ('Python', 'mxs')  
     
@@ -600,7 +600,7 @@ myf(1, 2)
 6. **함수 인자 넘기기**  
 - **list 또는 Tuple로 인수 넘기기**  
 def f_(a, b, c):  
-retrun a+b+c  
+　retrun a+b+c  
 li_ = [2, 3, 4]  
 f_(*li_)  
 출력) 9  
@@ -610,9 +610,107 @@ f_(*tu_)
     
 - **사전형으로 인수 넘기기**  
 def f_(a, b, c):  
-return a+b, b+c, c+a  
+　return a+b, b+c, c+a  
 dic_ = {'a':1, 'b':2, 'c':3}  
 f_(**dic_)  
 출력) (3, 5, 4)  
     
 :large_blue_diamond:**모듈**:large_blue_diamond:  
+p.py  
+def f_1():  
+　return ("function1")  
+def f_2():  
+　return ("function2")  
+basic.py  
+import p  
+print(p.f_1())  
+    
+:large_blue_diamond:**PYTHONPATH 환경변수**:large_blue_diamond:  
+1. **Python환경변수 확인**  
+import sys  
+path_ = sys.path  
+for i in path_:  
+　print(i)  
+※ 만약 모듈이 확인한 디렉토리 안에 들어있으면 디렉토리 이동없이 바로 불러 사용가능.  
+    
+2. **Python환경변수 추가**  
+- **1번째 방법**  
+import sys  
+sys.path.append('C:\\modules')  
+※ 경로해제는 sys.path.remove('C:\\modules')  
+※ 쉘에서는 append가 안된다.  
+- **2번째 방법**  
+window  
+set PYTHONPATH=.;c:\Python\lib;c:\Python\lib\tkinter  
+Linux/MAC(unix systeam)  
+setenv = PYTHONPATH .:/usr/local/user/modules lnu
+Linux  
+~/.cshrc  
+    
+3. **import 활용**  
+import maya.cmds as cmds  
+import maya  
+dir(maya)  
+출력) ['__builtins__', '__doc__', '__file__', '__name__', '__path__', 'cmds', 'mel', 등등..]  
+    
+4. **from 활용**  
+from maya.cmds import *  
+sphere()  
+※ namespace 없이 명령 사용가능.  
+from maya import cmds, mel  
+※ 한번에 2개를 불러올 수 도 있음.  
+    
+4. **reload() 활용**  
+첫 import시 내용 수정을 해도 변경되지 않음.  
+import value  
+reload(value)  
+    
+5. **__ name __ 활용**  
+현재 실행하는 공간의 이름을 알수 있음.  
+__ name __  
+출력) ' __ main __ '  
+module.__ name __  
+출력) 'module'  
+- golbal 공간에서 사용하는 것을 포함하지 않고 싶을때.  
+if __ name __ == ' __ main __ '  
+<명령어>  
+    
+:large_blue_diamond:**클래스(Class)**:large_blue_diamond:  
+1. **NameSpace**  
+class A:  
+　def f1(self):
+　　print 'f1'  
+　def f2(self):
+　　print 'f2'  
+PracClass = A()  
+PracClass.f1() / f1  
+PracClass.f2() / f2  
+    
+2. **클래스 상속**  
+class A:  
+　　a_ = None  
+　　b_ = None  
+　　c_ = None  
+　　def a(self, x):  
+  　　self.a_ = x  
+　　　print self.a_, self.b_, self.c_  
+　　def b(self, x):  
+　　　self.b_ = x  
+　　　print self.a_, self.b_, self.c_  
+　　def c(self, x):  
+　　　self.c_ = x  
+　　　print self.a_, self.b_, self.c_  
+class1 = A()  
+class1.a(1)  
+출력) 1 None None  
+class1.c(3)  
+출력) 1 None 3  
+***
+class b(A):  
+　　　pass  
+cb = b()  
+cb.a(9)  
+출력) 9 None None  
+상속이 됨.  
+    
+3. **클래스 멤버와 인스턴스 멤버**  
