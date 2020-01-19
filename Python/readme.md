@@ -473,3 +473,55 @@ all_grp['a']['grp2'] = dict.fromkeys(['sphere1', 'sphere2', 'sphere3'], 'nurbs')
 all_grp 출력) {'a': {'grp2':{sphere1:nurbs, "sphere2":nurbs, "sphere3":nurbs}, 'grp1':{'box1':'mesh','box2':'mesh','box3':'mesh'}}, 'b': {'grp3':None, 'grp4':None}}  
 all_grp['a']['grp1'] 출력) {'box1':'mesh','box2':'mesh','box3':'mesh'}  
     
+:large_blue_diamond:**리스트 내장**:large_blue_diamond:  
+for문 문법  
+for <변수> in <시퀀스>:  
+<명령문>  
+***
+while문 문법  
+while <조건>:  
+<명령문>  
+***
+li_ = [x for x in range(2, 10, 2)]  
+for x in li_:  
+print x  
+출력) 2 4 6 8  
+li_ = ["num:" + x for x in range(2, 10, 2)]  
+for x in li_:  
+print x  
+출력) num2 num4 num6 num8  
+    
+:large_blue_diamond:**제어문**:large_blue_diamond:  
+if문 문법  
+if <조건1>:  
+<명령문>  
+elif <조건2>:  
+<명령문>  
+else:  
+<명령문>  
+※ break(만나는 순간 종료), continue(만나는 순간 아래 명령은 실행하지 않고 다시 반복) 가 있음.  
+    
+:large_blue_diamond:**조건선언**:large_blue_diamond:  
+조건선언 문법  
+<변수> = <값1> if <조건> else <값2>  
+ex) v_ = 'true' if 3 < 4 else 'false'  
+v_ 출력) true  
+if 3 < 4:  
+v_ = 'true'  
+else:  
+v_ = 'false'  
+***
+:small_orange_diamond:리스트내장:small_orange_diamond:  
+리스트 안에 for문 명령을 포함  
+list_ = ['a1','2','a3','a4','5']  
+v_ = [x for x in list_ if x[0] == 'a']  
+v_ 출력) ['a1', 'a3', 'a4']  
+※ 리스트내장안에 있는 if조건시 else는 사용 불가!!  
+***
+if 조건에는 bool()이 생략 되어있다.  
+if bool(조건):  
+ex) if 0:  
+print("true")  
+else:  
+print("false")  
+출력) false  
