@@ -57,6 +57,22 @@ C/C++ 처럼 메모리를 직접 할당/해제할 필요가 없음.
 python에는 Gabage Collection이 있어 자동으로 수집하고 해제함.(java와 동일)  
 del(변수) 를 이용하여 지우는 함수가 있지만 실제로 메모리에서는 해제하지 않음.  
 하여 메모리에 문제가 생길 수 있어 None타입으로 변경 후 del함수를 사용하는 것이 바람직함.  
+  
+:large_blue_diamond:**깊은복사,얕은복사(DeepCopy, ShallowCopy)**:large_blue_diamond:  
+1. DeepCopy  
+a = [1,2,3]  
+b = a  
+a[0] = 5  
+a 출력) [5,2,3]  
+b 출력) [5,2,3]  
+    
+2. ShallowCopy  
+import copy
+a = [1,2,3]  
+b = copy.copy(a)  
+a[0] = 5  
+a 출력) [5,2,3]  
+b 출력) [1,2,3]  
 ***
 #### 16. GoLang  
 ***
