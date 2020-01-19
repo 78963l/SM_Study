@@ -678,9 +678,9 @@ if __ name __ == ' __ main __ '
 :large_blue_diamond:**클래스(Class)**:large_blue_diamond:  
 1. **NameSpace**  
 class A:  
-　def f1(self):
+　def f1(self):  
 　　print 'f1'  
-　def f2(self):
+　def f2(self):  
 　　print 'f2'  
 PracClass = A()  
 PracClass.f1() / f1  
