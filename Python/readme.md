@@ -201,14 +201,14 @@ h e l l o
 -5 -4 -3 -2 -1 0  
   
 :small_orange_diamond:리스트:small_orange_diamond:  
-1. **<선언>**  
+1. **선언**  
 li = [1,2,3]  
     
-2. **<개수>**  
+2. **개수**  
 len(li)  
 출력)3  
     
-3. **<여러개 추가>**  
+3. **여러개 추가**  
 li + [4,5,6]  
 출력) [1,2,3,4,5,6]  
 li 출력) [1,2,3]  
@@ -216,11 +216,11 @@ li += [4,5,6]
 출력) [1,2,3,4,5,6]  
 li 출력) [1,2,3,4,5,6]  
     
-4. **<한개 추가>**  
+4. **한개 추가**  
 li.append(7)  
 li 출력) [1,2,3,4,5,6,7]  
     
-5. **<자르기>**  
+5. **자르기**  
 li[1:3]  
 출력) [2,3]  
 li[::2]  
@@ -232,7 +232,7 @@ li[::3]
 li[1] = 10  
 li 출력) [1,10,3,4,5,6,7]  
     
-7. **<리스트 자료복사하여 넣기>**  
+7. **리스트 자료복사하여 넣기**  
 li * 2  
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7]  
@@ -240,15 +240,15 @@ li *= 2
 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
 li 출력) [1,10,3,4,5,6,7,1,10,3,4,5,6,7]  
     
-8. **<자료있는지 검사>**  
+8. **자료있는지 검사**  
 10 in li  
 출력) True  
     
-9. **<자료중복 확인>**  
+9. **자료중복 확인**  
 li.count(4)  
 출력) 2  
     
-10. **<인덱스로 삭제>**  
+10. **인덱스로 삭제**  
 del li[1]  
 li 출력) li 출력) [1,3,4,5,6,7,1,10,3,4,5,6,7]  
 <slicing 으로 삭제>  
@@ -257,7 +257,7 @@ li[4:6]
 li[4:6] = []  
 li 출력) [1,3,4,5,1,10,3,4,5,6,7]  
     
-11. **<특정자료 index 구하기>**  
+11. **특정자료 index 구하기**  
 li.index(10)  
 출력) 7  
 
@@ -284,40 +284,40 @@ li2[3] = [11,22,33]
 li2 출력) [1,2,['a','b','c'],[11,22,33]],4]  
     
 :small_orange_diamond:리스트 메소드:small_orange_diamond:  
-1. **<리스트 인덱스로 추가>**  
+1. **리스트 인덱스로 추가**  
 li = ['a','b','c','e']  
 li.insert(3, 'd')  
 li 출력) ['a','b','c','d','e']  
     
-2. **<리스트 정렬 반대로>**  
+2. **리스트 정렬 반대로**  
 li.reverse()
 li 출력) ['e','d','c','b','a']  
 ※ li.sort(reverse=True) 동일.  
     
-3. **<순서대로 정렬>**  
+3. **순서대로 정렬**  
 li.sort()  
 li 출력) ['a','b','c','d','e']  
 ※ sort는 리턴값이 없다.  
     
-4. **<특정 자료 지우기>**  
+4. **특정 자료 지우기**  
 li.remove('c')  
 li 출력) ['a','b','d','e']  
     
-5. **<여러개추가>**  
+5. **여러개추가**  
 li.extend(['f','g'])  
 li 출력) ['a','b','d','e','f','g']  
     
-6. **<list형으로 추가>**  
+6. **list형으로 추가**  
 li.aapend(['f','g'])  
 li 출력) ['a','b','d','e',['f','g']]  
     
 :small_orange_diamond:리스트 스택:small_orange_diamond:  
-1. **<데이터 추가>**  
+1. **데이터 추가**  
 li = [1,2,3,4,5]  
 li.append(6)  
 li 출력) [1,2,3,4,5,6]  
     
-2. **<데이터 빼기>**  
+2. **데이터 빼기**  
 li.pop()  
 li 출력) [1,2,3,4,5]  
     
@@ -341,48 +341,48 @@ print "%s~~ %s!!!" % (h, m)
 obj = {"Cube":"mesh", "Shpere":"nurbs", "Cone":"mesh"}  
     
 :small_orange_diamond:검색:small_orange_diamond:  
-1. **<검색>**
+1. **검색**
 obj["Cube"]  
 출력) "mesh"  
 ※key를 넣어야함.(없으면 에러를 냄)  
     
-2. **<치환>**  
+2. **치환**  
 obj["Cube"] = "nurbs"  
 obj 출력) {"Cube":"nurbs", "Shpere":"nurbs", "Cone":"mesh"}  
     
-3. **<삭제>**  
+3. **삭제**  
 del obj["Cone"]  
 obj 출력) {"Cube":"nurbs", "Shpere":"nurbs"}  
     
-4. **<자료 개수>**  
+4. **자료 개수**  
 len(obj)  
 출력) 2  
     
 :large_blue_diamond:**Dictionary Method**:large_blue_diamond:  
 obj = {"Cube":"mesh", "Shpere":"nurbs", "Cone":"mesh"}  
     
-1. **<key의 리스트 받기>**  
+1. **key의 리스트 받기**  
 obj.keys()  
 출력) ["Cube","Shpere","Cone"]  
     
-2. **<value의 리스트 받기>:**  
+2. **value의 리스트 받기**  
 obj.values()  
 출력) ["mesh","nurbs","mesh"]  
     
-3. **<(key와 value)를 리스트형과 튜플형으로 받기>**  
+3. **(key와 value)를 리스트형과 튜플형으로 받기**  
 obj.items()  
 출력) [("Cube":"mesh"), ("Shpere":"nurbs"), ("Cone":"mesh")]  
     
-4. **<key값 유무>:**  
+4. **key값 유무**  
 "Box" in obj  
 출력) True  
 ※ value값 유무는 다른방식으로 해야함.  
     
-5. **<value값 유무>**  
+5. **value값 유무**  
 "mesh" in obj.values()  
 출력) True  
     
-6. **<검색>**  
+6. **검색**  
 obj.get("Shpere")  
 출력) nurbs  
 ※ 없는 값은 None으로 리턴됨.(기본방식(에러)과 다름)  
@@ -392,7 +392,7 @@ obj.get("Hex", "mesh")
 ob.setdefault("Hex", "mesh")
 ※ 없는 값이면 지정한 value로 나옴.(단 사전엔 추가o)  
     
-7. **<삭제>**  
+7. **삭제**  
 obj.popitem()  
 출력) ("Cone", "mesh")  
 ※ 사전에는 지워짐.  
@@ -400,10 +400,10 @@ obj.pop("Shpere")
 출력) "nurbs"  
 ※ 사전에는 지워짐.  
     
-8. **<존재유무>**  
+8. **존재유무**  
 obj.has_key("Cube")  
 출력) True  
     
-9. **<특정 key들을 한번에 default값으로 설정>**  
+9. **특정 key들을 한번에 default값으로 설정**  
 obj = dict.fromkeys(["B1","B2","B3"], "mesh")  
 obj 출력) {("B1": "mesh", "B2": "mesh", "B3": "mesh"}
