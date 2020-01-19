@@ -73,6 +73,12 @@ b = copy.copy(a)
 a[0] = 5  
 a 출력) [5,2,3]  
 b 출력) [1,2,3]  
+  
+:large_blue_diamond:**false, true 값**:large_blue_diamond:  
+<false>  
+"", [],(), {}, 0, None  
+<true>  
+"aa", [1,2,3], 1  
 ***
 #### 16. GoLang  
 ***
