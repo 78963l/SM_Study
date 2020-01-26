@@ -59,10 +59,10 @@ if 조건문 {<br>
 　명령문3<br>
 }<br><br>
 ex) a := 5<br>
-if a == 3 {
-    명령문1
-} else if a == 4 {
-    명령문2
-} else{
-    명령문3
-}
+if a == 3 {<br>
+    명령문1<br>
+} else if a == 4 {<br>
+    명령문2<br>
+} else{<br>
+    명령문3<br>
+}<br>
