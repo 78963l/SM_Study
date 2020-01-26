@@ -51,7 +51,7 @@ const (<br>
 )<br>
 
 :large_blue_diamond:**조건문**:large_blue_diamond:<br>
-**문법1**<br>
+- **문법1**<br>
 if 조건문 {<br>
 　명령문1<br>
 } else if 조건문{<br>
@@ -68,7 +68,7 @@ if a == 3 {<br>
 } else{<br>
     명령문3<br>
 }<br><br>
-**문법2**<br>
+- **문법2**<br>
 if 초기화; 조건문 {<br>
 　명령문1<br>
 } else if 조건문{<br>
