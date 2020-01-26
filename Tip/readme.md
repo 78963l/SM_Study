@@ -52,35 +52,59 @@
 #### 14. TypeScript  
 ***
 #### 15. Python  
-:large_blue_diamond:**메모리 관리를 따로 안해줘도 됨**:large_blue_diamond:  
-C/C++ 처럼 메모리를 직접 할당/해제할 필요가 없음.  
-python에는 Gabage Collection이 있어 자동으로 수집하고 해제함.(java와 동일)  
-del(변수) 를 이용하여 지우는 함수가 있지만 실제로 메모리에서는 해제하지 않음.  
-하여 메모리에 문제가 생길 수 있어 None타입으로 변경 후 del함수를 사용하는 것이 바람직함.  
-  
-:large_blue_diamond:**깊은복사,얕은복사(DeepCopy, ShallowCopy)**:large_blue_diamond:  
-1. DeepCopy  
-a = [1,2,3]  
-b = a  
-a[0] = 5  
-a 출력) [5,2,3]  
-b 출력) [5,2,3]  
-    
-2. ShallowCopy  
-import copy  
-a = [1,2,3]  
-b = copy.copy(a)  
-a[0] = 5  
-a 출력) [5,2,3]  
-b 출력) [1,2,3]  
-  
+:large_blue_diamond:**메모리 관리를 따로 안해줘도 됨**:large_blue_diamond:<br>
+- C/C++ 처럼 메모리를 직접 할당/해제할 필요가 없음.<br>
+python에는 Gabage Collection이 있어 자동으로 수집하고 해제함.(java와 동일)<br>
+del(변수) 를 이용하여 지우는 함수가 있지만 실제로 메모리에서는 해제하지 않음.<br>
+하여 메모리에 문제가 생길 수 있어 None타입으로 변경 후 del함수를 사용하는 것이 바람직함.<br>
+
+:large_blue_diamond:**깊은복사,얕은복사(DeepCopy, ShallowCopy)**:large_blue_diamond:<br>
+1. DeepCopy<br>
+a = [1,2,3]<br>
+b = a<br>
+a[0] = 5<br>
+a 출력) [5,2,3]<br>
+b 출력) [5,2,3]<br><br>
+2. ShallowCopy<br>
+import copy<br>
+a = [1,2,3]<br>
+b = copy.copy(a)<br>
+a[0] = 5<br>
+a 출력) [5,2,3]<br>
+b 출력) [1,2,3]<br>
+
 :large_blue_diamond:**false, true 값**:large_blue_diamond:  
-- false  
-"", [],(), {}, 0, None  
-- true  
-"aa", [1,2,3], 1  
+- false<br>
+"", [],(), {}, 0, None<br>
+- true<br>
+"aa", [1,2,3], 1<br>
+
 ***
-#### 16. GoLang  
+#### 16. GoLang
+:large_blue_diamond:**숫자입출력 예제**:large_blue_diamond:<br>
+package main<br><br>
+import (<br>
+	"bufio" // 읽기<br>
+	"fmt"<br>
+	"os"      // 쓰기<br>
+	"strconv" // 문자열을 숫자로 변경<br>
+	"strings" // 문자열 패키지<br>
+)<br><br>
+func main() {<br>
+	fmt.Println("숫자를 입력하세요")<br>
+	reader := bufio.NewReader(os.Stdin)<br>
+	line, _ := reader.ReadString('\n') // 개행문자가 나올때까지 읽음.(_이것은 이름없는 변수(처리하지않음))<br>
+	line = strings.TrimSpace(line)     // 빈공간 없애기<br><br>
+	n1, _ := strconv.Atoi(line) // 문자를 숫자로 변경<br><br>
+	line, _ = reader.ReadString('\n')<br>
+	line = strings.TrimSpace(line)<br><br>
+	n2, _ := strconv.Atoi(line)<br><br>
+	fmt.Printf("입력하신 숫자는 %d, %d 입니다.", n1, n2)<br>
+}<br><br>
+입력) 숫자를 입력하세요 <br>
+3<br>
+5<br>
+출력) 입력하신 숫자는 3, 5 입니다.<br>
 ***
 #### 17. Html  
 ***
