@@ -1,6 +1,6 @@
 ## :memo: SM_Study
 ***
-## :exclamation:python, GoLang readme 작성중..  
+## :exclamation:(python, GoLang) readme 작성중..  
 ### :star:[Tip](/Tip/readme.md):star:
 ### :star:[Issue](/Issue/readme.md):star:
 ### -- Program --
