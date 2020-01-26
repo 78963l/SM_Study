@@ -42,7 +42,7 @@ s.swapcase()<br>
 출력) "HeLLo WorLD"<br>  
 
 :large_blue_diamond:**문자 검색 관련 메소드**:large_blue_diamond:<br>
-- 1. **단어가 몇개가 있는지 개수를 나타냄**<br>
+1. **단어가 몇개가 있는지 개수를 나타냄**<br>
 s = "This is Python"<br>
 s.count('this')<br>
 출력) 1<br><br>
@@ -55,7 +55,7 @@ s.index('Python')<br>
 ※ 차이점 (없으면 -1을 반환하지 않고 에러를 냄)<br>
 
 :large_blue_diamond:**문자 치환 관련 메소드**:large_blue_diamond:<br>
-- 1. **양쪽 공백 지우기, 원하는 문자 지우기**<br>
+1. **양쪽 공백 지우기, 원하는 문자 지우기**<br>
 s = " center "<br>
 s.strip()<br>
 출력) "center"<br>
@@ -68,7 +68,7 @@ s.replace("Hello", "Maya")<br>
 출력) "Maya Python"<br>
 
 :large_blue_diamond:**문자 분리 관련 메소드**:large_blue_diamond:<br>
-- 1. **list 문자열을 ':' 기준으로 조합**<br>
+1. **list 문자열을 ':' 기준으로 조합**<br>
 s = "Hello Python"<br>
 ':'.join(s.split())<br>
 출력) "Hello:Python"<br><br>
@@ -78,7 +78,7 @@ s.split(y)<br>
 출력) ["Hello P","thon"]<br>
 
 :large_blue_diamond:**기타 문자 메소드**:large_blue_diamond:<br>
-- 1. **양쪽을 공백으로 채우며 50개 문자를 중앙기준으로 배열**<br>
+1. **양쪽을 공백으로 채우며 50개 문자를 중앙기준으로 배열**<br>
 s = "Hello Python"<br>
 s.center(50)<br>
 출력) "5o개 공백... Hello Python 50개 공백..."<br><br>
@@ -132,7 +132,7 @@ b = [1,2,3,4]<br>
 del a<br>
 
 :large_blue_diamond:**객체 치환**:large_blue_diamond:<br>
-- 1. **Call By Reference**<br>
+1. **Call By Reference**<br>
 a = [1, 2, 3]<br>
 b = [4, a, 'b']<br>
 출력) [4, [1, 2, 3], 'b']<br>
@@ -168,7 +168,7 @@ h e l l o<br>
 -5 -4 -3 -2 -1 0<br>
 
 :small_orange_diamond:리스트:small_orange_diamond:<br>
-- 1. **선언**<br>
+1. **선언**<br>
 li = [1,2,3]<br><br>
 2. **개수**<br>
 len(li)<br>
