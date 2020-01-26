@@ -121,9 +121,9 @@ func main(){<br>
 ex)<br>
 func main(){<br>
 　for i = 0; i < 10; i++ {<br>
-　　if i == 5{
-　　　　break
-　　}
+　　if i == 5{<br>
+　　　　break<br>
+　　}<br>
 　　fmt.Print(i+" ")<br>
 　}<br>
 }<br>
@@ -131,9 +131,9 @@ func main(){<br>
 ex)<br>
 func main(){<br>
 　for i = 0; i < 10; i++ {<br>
-　　if i == 5{
-　　　　continue
-　　}
+　　if i == 5{<br>
+　　　　continue<br>
+　　}<br>
 　　fmt.Print(i+" ")<br>
 　}<br>
 }<br>
