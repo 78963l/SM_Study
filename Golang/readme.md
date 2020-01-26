@@ -50,7 +50,7 @@ const (<br>
 　b = 1<br>
 )<br><br>
 :large_blue_diamond:**조건문**:large_blue_diamond:<br>
-**문법**<br>
+**문법1**<br>
 if 조건문 {<br>
 　명령문1<br>
 } else if 조건문{<br>
@@ -58,11 +58,26 @@ if 조건문 {<br>
 } else {<br>
 　명령문3<br>
 }<br><br>
-ex) a := 5<br>
+ex)<br>
+a := 5<br>
 if a == 3 {<br>
     명령문1<br>
 } else if a == 4 {<br>
     명령문2<br>
 } else{<br>
     명령문3<br>
-}<br>
+}<br><br>
+**문법2**<br>
+if 초기화; 조건문 {<br>
+　명령문1<br>
+} else if 조건문{<br>
+　명령문2<br>
+} else {<br>
+　명령문3<br>
+}<br><br>
+ex)<br>
+if val := 1; val != 1 {<br>
+    fmt.Println("1이 아닙니다.")<br>
+} else{<br>
+    fmt.Println("1입니다.")<br>
+}<br><br>
