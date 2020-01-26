@@ -39,4 +39,13 @@ int64 -> 8byte<br>
 int -> 컴퓨터의 비트수에 따라 다름(4byte or 8byte)<br>
 **4. 실수형 타입**<br>
 float32 -> 4byte<br>
-float64 -> 8byte<br>
+float64 -> 8byte<br><br>
+- **상수 선언**<br>
+const age1 = 20<br>
+const age2 // 에러<br>
+※ const는 반드시 초기화를 해줘야됨.<br>
+(상수 여러개 선언)<br>
+const (<br>
+　a = 0<br>
+　b = 1<br>
+)<br><br>
