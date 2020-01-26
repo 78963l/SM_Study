@@ -117,3 +117,24 @@ func main(){<br>
 　fmt.Println("최종 i 값:", i)<br>
 }<br>
 최종 i값은?) 10<br><br>
+- **break, continue문법**<br>
+ex)<br>
+func main(){<br>
+　for i = 0; i < 10; i++ {<br>
+　　if i == 5{
+　　　　break
+　　}
+　　fmt.Print(i+" ")<br>
+　}<br>
+}<br>
+출력) 0 1 2 3 4<br><br>
+ex)<br>
+func main(){<br>
+　for i = 0; i < 10; i++ {<br>
+　　if i == 5{
+　　　　continue
+　　}
+　　fmt.Print(i+" ")<br>
+　}<br>
+}<br>
+출력) 0 1 2 3 4 6 7 8 9<br><br>
