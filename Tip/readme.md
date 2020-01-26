@@ -84,11 +84,11 @@ b 출력) [1,2,3]<br>
 :large_blue_diamond:**숫자입출력 예제**:large_blue_diamond:<br>
 package main<br><br>
 import (<br>
-	"bufio" // 읽기<br>
-	"fmt"<br>
-	"os"      // 쓰기<br>
-	"strconv" // 문자열을 숫자로 변경<br>
-	"strings" // 문자열 패키지<br>
+　"bufio" // 읽기<br>
+　"fmt"<br>
+　"os"      // 쓰기<br>
+　"strconv" // 문자열을 숫자로 변경<br>
+　"strings" // 문자열 패키지<br>
 )<br><br>
 func main() {<br>
 　fmt.Println("숫자를 입력하세요")<br>

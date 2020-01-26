@@ -51,7 +51,7 @@ const (<br>
 )<br>
 
 :large_blue_diamond:**조건문**:large_blue_diamond:<br>
-- **문법1**<br>
+- **if 문법1**<br>
 if 조건문 {<br>
 　명령문1<br>
 } else if 조건문{<br>
@@ -68,7 +68,7 @@ if a == 3 {<br>
 } else{<br>
     명령문3<br>
 }<br><br>
-- **문법2**<br>
+- **if 문법2**<br>
 if 초기화; 조건문 {<br>
 　명령문1<br>
 } else if 조건문{<br>
@@ -82,3 +82,38 @@ if val := 1; val != 1 {<br>
 } else{<br>
     fmt.Println("1입니다.")<br>
 }<br><br>
+- **switch 문법**<br>
+switch x {<br>
+　case 1:<br>
+　　명령어1 <br>
+　case 2:<br>
+　　명령어2 <br>
+　default:<br>
+　　명령어3 <br>
+}<br>
+※ fallthrough를 사용하면 C나 C#처럼 밑에 있는 명령어들 실행 가능.<br>
+switch x {<br>
+　case 1:<br>
+　　명령어1 <br>
+　　fallthrough<br>
+　case 2:<br>
+　　명령어2 <br>
+　　fallthrough<br>
+　default:<br>
+　　명령어3 <br>
+}<br>
+
+:large_blue_diamond:**반복문**:large_blue_diamond:<br>
+- **for 문법**<br>
+for 조건문 {<br>
+　명령문<br>
+}<br>
+ex)<br>
+func main(){<br>
+　i:=0<br>
+　for i < 10 {<br>
+　　fmt.Println(i)<br>
+　　i++<br>
+　}<br>
+}<br>
+최종 i값은?) 10<br><br>
