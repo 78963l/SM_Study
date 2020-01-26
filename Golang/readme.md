@@ -105,15 +105,15 @@ switch x {<br>
 
 :large_blue_diamond:**반복문**:large_blue_diamond:<br>
 - **for 문법**<br>
-for 조건문 {<br>
+for 초기화; 조건문; 증감문 {<br>
 　명령문<br>
-}<br>
+}<br><br>
 ex)<br>
 func main(){<br>
-　i:=0<br>
-　for i < 10 {<br>
+　var i int<br>
+　for i = 0; i < 10; i++ {<br>
 　　fmt.Println(i)<br>
-　　i++<br>
 　}<br>
+　fmt.Println("최종 i 값:", i)<br>
 }<br>
 최종 i값은?) 10<br><br>
