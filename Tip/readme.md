@@ -91,15 +91,15 @@ import (<br>
 	"strings" // 문자열 패키지<br>
 )<br><br>
 func main() {<br>
-	fmt.Println("숫자를 입력하세요")<br>
-	reader := bufio.NewReader(os.Stdin)<br>
-	line, _ := reader.ReadString('\n') // 개행문자가 나올때까지 읽음.(_이것은 이름없는 변수(처리하지않음))<br>
-	line = strings.TrimSpace(line)     // 빈공간 없애기<br><br>
-	n1, _ := strconv.Atoi(line) // 문자를 숫자로 변경<br><br>
-	line, _ = reader.ReadString('\n')<br>
-	line = strings.TrimSpace(line)<br><br>
-	n2, _ := strconv.Atoi(line)<br><br>
-	fmt.Printf("입력하신 숫자는 %d, %d 입니다.", n1, n2)<br>
+　fmt.Println("숫자를 입력하세요")<br>
+　reader := bufio.NewReader(os.Stdin)<br>
+　line, _ := reader.ReadString('\n') // 개행문자가 나올때까지 읽음.(_이것은 이름없는 변수(처리하지않음))<br>
+　line = strings.TrimSpace(line)     // 빈공간 없애기<br><br>
+　n1, _ := strconv.Atoi(line) // 문자를 숫자로 변경<br><br>
+　line, _ = reader.ReadString('\n')<br>
+　line = strings.TrimSpace(line)<br><br>
+　n2, _ := strconv.Atoi(line)<br><br>
+　fmt.Printf("입력하신 숫자는 %d, %d 입니다.", n1, n2)<br>
 }<br><br>
 입력) 숫자를 입력하세요 <br>
 3<br>
