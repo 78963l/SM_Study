@@ -10,7 +10,7 @@ func main() {<br>
 　fmt.Print("Hello Go~")<br>
 }<br>
 실행) go run practice.go<br>
-출력) Hello Go~<br>
+출력) Hello Go~<br><br>
 - **변수**<br>
 var -> 키워드 (variable - 변수를 의미)<br>
 var a int = 3 // (변수 (선언, 초기화))<br>
