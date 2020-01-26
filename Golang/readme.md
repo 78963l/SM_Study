@@ -16,11 +16,15 @@ var -> 키워드 (variable - 변수를 의미)<br>
 var a int = 3 // (변수 (선언, 초기화))<br>
 var b int // (변수 선언)<br>
 b = 4 // (변수 초기화)<br>
-fmt.Println(a + b)<br>
+fmt.Println(a + b)<br><br>
 - **변수선언방법**<br>
-방법1. var n1 int 1<br>
+방법1. var n1 int = 1<br>
 방법2. var n1 = 1<br>
-방법3. n1 := 1<br><br>
+방법3. n1 := 1<br>
+- **변수여러개선언방법**<br>
+방법1. var n1,n2 int = 1, 2<br>
+방법2. var (n1,n2 int = 1, 2)<br>
+방법3. n1, n2 := 1, 2.6<br><br>
 - **데이터 타입**<br>
 1. bool 타입<br>
 bool -> 1byte<br>
