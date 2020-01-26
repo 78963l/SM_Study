@@ -5,7 +5,7 @@
 - 기본문법<br>
 <practice.go><br>
 package main<br>
-import "fmt" // format<br>
+import "fmt" // (format)<br>
 func main() {<br>
 　fmt.Print("Hello Go~")<br>
 }<br>
