@@ -44,8 +44,25 @@ float64 -> 8byte<br><br>
 const age1 = 20<br>
 const age2 // 에러<br>
 ※ const는 반드시 초기화를 해줘야됨.<br>
-(상수 여러개 선언)<br>
+**(상수 여러개 선언)**<br>
 const (<br>
 　a = 0<br>
 　b = 1<br>
 )<br><br>
+:large_blue_diamond:**조건문**:large_blue_diamond:<br>
+**문법**<br>
+if 조건문 {<br>
+　명령문1<br>
+} else if 조건문{<br>
+　명령문2<br>
+} else {<br>
+　명령문3<br>
+}<br><br>
+ex) a := 5<br>
+if a == 3 {
+    명령문1
+} else if a == 4 {
+    명령문2
+} else{
+    명령문3
+}
