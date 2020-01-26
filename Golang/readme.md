@@ -48,7 +48,8 @@ const age2 // 에러<br>
 const (<br>
 　a = 0<br>
 　b = 1<br>
-)<br><br>
+)<br>
+
 :large_blue_diamond:**조건문**:large_blue_diamond:<br>
 **문법1**<br>
 if 조건문 {<br>
