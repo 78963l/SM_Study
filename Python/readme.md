@@ -16,7 +16,7 @@ keyword.kwlist<br>
 '%s Python' % str<br>
 
 :large_blue_diamond:**대문자 관련 메소드**:large_blue_diamond:<br>
-- 1. **첫문자만 영문으로 변경**<br>
+1. **첫문자만 영문으로 변경**<br>
 s = "hello Python"<br>
 s.capitalize()<br>
 출력) "Hello Python"<br><br>
