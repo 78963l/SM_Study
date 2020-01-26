@@ -26,17 +26,17 @@ fmt.Println(a + b)<br><br>
 방법2. var (n1,n2 int = 1, 2)<br>
 방법3. n1, n2 := 1, 2.6<br><br>
 - **데이터 타입**<br>
-1. bool 타입<br>
+**1. bool 타입**<br>
 bool -> 1byte<br>
-2. 문자열 타입<br>
+**2. 문자열 타입**<br>
 string -> 문자열에 따라 다름<br>
 UTF-8 영문은 1byte, 한글은 2~3byte<br>
-3. 정수형 타입<br>
+**3. 정수형 타입**<br>
 int8 -> 1byte<br>
 int16 -> 2byte<br>
 int32 -> 4byte<br>
 int64 -> 8byte<br>
 int -> 컴퓨터의 비트수에 따라 다름(4byte or 8byte)<br>
-4. 실수형 타입<br>
+**4. 실수형 타입**<br>
 float32 -> 4byte<br>
 float64 -> 8byte<br>
