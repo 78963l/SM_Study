@@ -55,7 +55,7 @@ ex) 만약 electron 에러일시,<br>
 
 ![error1](./image/ts_error1.PNG)<br>
 npm install electron -g (에러난 모듈을 설치해야함.)<br>
-* * * * *
+***
 :large_blue_diamond:**Electron Security Warning 해결방법**:large_blue_diamond:<br>
 문제) 아래와 같은 경고 표시가 나옴.<br><br>
 ![error1](./image/ts_error2.PNG)<br><br>
@@ -64,7 +64,6 @@ npm install electron -g (에러난 모듈을 설치해야함.)<br>
 코드) **< meta http-equiv="Content-Security-Policy" content="script-src 'self' " />** <br><br>
 2. 그럼 에러가 나오는데, 아래사진의 하얀색 박스에 나온 코드를 content="script-src '여기부분' "<br>
 여기부분이란 곳에 추가하게 되면 경고가 사라짐.<br>
-* * *
 ![error2](./image/ts_error3.PNG)<br><br>
 ***
 #### 15. Python
