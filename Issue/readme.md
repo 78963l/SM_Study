@@ -60,7 +60,7 @@ npm install electron -g (에러난 모듈을 설치해야함.)<br>
 ![error1](./image/ts_error2.PNG)<br><br>
 해결방법)
 1. html의 head 부분에 코드를 넣음.<br>
-코드) **< meta http-equiv="Content-Security-Policy" content="script-src 'self' " />** <br>
+코드) **< meta http-equiv="Content-Security-Policy" content="script-src 'self' " />** <br><br>
 2. 그럼 에러가 나오는데, 아래사진의 하얀색 박스에 나온 코드를 content="script-src '여기부분' "<br>
 여기부분이란 곳에 추가하게 되면 경고가 사라짐.<br>
 
