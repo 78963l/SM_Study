@@ -51,7 +51,8 @@
 ***
 #### 14. TypeScript
 :large_blue_diamond:**npm start Error**:large_blue_diamond:<br>
-- ex) 만약 electron 에러일시,<br>
+ex) 만약 electron 에러일시,<br>
+
 ![error1](./image/ts_error1.PNG)<br>
 npm install electron -g (에러난 모듈을 설치해야함.)<br>
 
