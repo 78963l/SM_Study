@@ -69,6 +69,11 @@ npm install electron -g (에러난 모듈을 설치해야함.)<br>
 #### 15. Python
 ***
 #### 16. GoLang
+:large_blue_diamond:**package Error**:large_blue_diamond:<br>
+ex) go 실행시 import 에서 에러나는 경우,<br>
+
+![error1](./image/go_error1.PNG)<br>
+go get github.com/herenow/go-crate (에러난 패키지을 설치해야함.)<br>
 ***
 #### 17. Html
 ***
