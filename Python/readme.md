@@ -641,7 +641,7 @@ PracClass.f1() / f1
 PracClass.f2() / f2  
     
 2. **클래스 상속**  
-class A:  
+> class A:  
 　　a_ = None  
 　　b_ = None  
 　　c_ = None  
@@ -660,7 +660,7 @@ class1.a(1)
 class1.c(3)  
 출력) 1 None 3  
 ***
-class b(A):  
+> class b(A):  
 　　　pass  
 cb = b()  
 cb.a(9)  
@@ -668,3 +668,257 @@ cb.a(9)
 상속이 됨.  
     
 3. **클래스 멤버와 인스턴스 멤버**  
+- 클래스멤버 : 클래스 공간에서 만들어지는 멤버  
+- 인스턴스멤버 : 메소드 안에서 만들어지는 멤버  
+※ 인스턴스멤버를 공유하기 위해선 항상 변수 앞에 self를 붙인다.  
+예제)  
+>class pos:  
+　x = 0  
+  
+> pos1 = pos()  
+pos2 = pos()  
+print(pos.x)  
+0  
+print(pos1.x)  
+0  
+print(pos2.x)  
+0  
+pos.x = 1  
+print(pos.x)  
+1  
+print(pos1.x)  
+1  
+print(pos2.x)  
+1  
+  
+> pos1.x = 3  
+print(pos.x)  
+1  
+print(pos1.x)  
+3  
+print(pos2.x)  
+1
+  
+> pos.x = 10  
+print(pos.x)  
+10  
+print(pos1.x)  
+3  
+print(pos2.x)  
+10  
+
+　　※ 값을 지정하는 순간 더이상 참조하지 않음.  
+> del pos1.x
+print(pos.x)  
+10  
+print(pos1.x)  
+10  
+print(pos2.x)  
+10
+
+　　※ pos1.x를 지우는 순간 다시 참조하게 됨.  
+    
+4. **__ init __ , __ del __ (생성과 소멸)**  
+
+> ex)  
+class simple:  
+　def __ init __(self):  
+　　print("생성자!!")  
+　def __ del __(self):  
+　　print("소멸자!!")  
+
+> c = simple()  
+생성자!!  
+del c  
+소멸자!!  
+    
+:large_blue_diamond:**File 다루기**:large_blue_diamond:  
+1. **os module**  
+file을 관리하는 기능은 os module에 대부분 들어있음.  
+> import os  
+
+현재 디렉토리를 알아볼 때  
+> os.getcwd()  
+
+현재 디렉토리를 이동할 때  
+>os.chdir('c:\\temp')  
+os.getcwd()  
+"c:\\temp"
+
+현재 디렉토리에서 폴더를 생성할 때  
+> os.mkdir('folderCreate')  
+
+여러 개의 폴더를 한번에 생성할 때  
+> os.makedirs("folderCreate\\maya\\nuke\\houdini")  
+
+폴더가 없을경우 폴더를 생성해라.  
+> if not os.path.exists("folder\\test"):  
+　　os.makedirs("folder\\test")  
+
+한 개의 폴더를 지울때  
+> os.rmdir("folder\\test")  
+
+여러개 폴더를 한번에 지울 때  
+> os.removedir("folderCreate\\maya\\nuke\\houdini")  
+
+파일 목록을 얻어오기  
+> os.chdir("C:\\testFile")  
+os.listdir('.')  
+
+파일인지 검사하기  
+>os.path.isfile('main.py')  
+True  
+
+폴더인지 검사하기  
+>os.path.isdir('main.py')  
+False
+
+파일 권한 판단  
+  
+존재하는 파일인지 검사  
+>os.access("main.py", os.F_OK)  
+True  
+
+읽기 권한 있는지 검사
+>os.access("main.py", os.R_OK)  
+True
+
+쓰기 권한 있는지 검사
+>os.access("main.py", os.W_OK)  
+True
+
+실행 권한 있는지 검사
+>os.access("main.py", os.X_OK)  
+True
+
+읽기와 쓰기 권한 있는지 검사
+>os.access("main.py", os.R_OK | os.W_OK)  
+True
+
+권한 변경  
+>os.chomode("main.py", 0777)  
+
+파일 이름 변경
+> os.rename("main.py", "basic.py")  
+
+파일 이동
+> os.rename("main.py", "test\\main.py")  
+
+파일 지우기  
+> os.remove("test\\main.py")  
+  
+2. **glob moudule로 파일 목록 얻기**  
+> import glob  
+all_file = glob.glob("C:\\test\\*.jpg")  
+all_file
+
+C:\\test\\abc1.jpg  
+C:\\test\\abc2.jpg  
+C:\\test\\a1.jpg  
+C:\\test\\a2.jpg  
+C:\\test\\a3.jpg  
+
+> all_file = glob.glob("C:\\test\\[a-c]*.jpg")  
+
+wild card 문자를 사용해서 파일 목록을 얻을 수 있음.  
+*: 전체 매칭  
+?: 한문자 매칭  
+[abc...]: 임의의 문자 매칭  
+[!abc...]: 임의의 문자 비매칭  
+
+3. **shutil moudle 사용법**  
+shutil 명령은 os module에 없는 file copy기능를 주로 사용함.  
+- File 하나를 copy  
+>import shutil
+shutil.copyfile("C:\\test\\main.py", "C:\\test\\basic.py")  
+
+- Folder 전체를 copy  
+> import glob  
+glob.glob("C:\\test\\*")  
+shutil.copytree("C:\\test","C:\\test2")
+
+- floder와 file 전체 삭제  
+> shutil.rmtree("C:\\test")  
+
+3. **경로명 및 file 이름 다루기**  
+window 는 \ 를 사용.  
+Unix는 / 를 사용.  
+
+- window 계열  
+os.sep  
+' \ \ '  
+  
+- Unix 계열  
+os.sep  
+' / '  
+
+- 폴더 경로명만 추출  
+os.path.dirname("C:\\\test\\\abc.jpg")  
+' C:\\\test '  
+
+- 파일 이름만 추출  
+os.path.dirname("C:\\\test\\\abc.jpg")  
+' abc.jpg '  
+
+- 확장자와 구분하기  
+os.path.splitext("C:\\\test\\\abc.jpg")  
+('C:\\\test' , ' abc.jpg ')  
+
+- 경로 결합하기  
+os.path.join("C:\\test", "abc.jpg")  
+"C:\\\test\\\abc.jpg"  
+
+- 현재 사용하는 os folder 구분문자로 변환 (window 계열)  
+os.path.normcase("C:/test/abc.jpg")  
+"C: \\\ test \\\ abc.jpg"  
+
+- 현재 사용하는 os folder 구분문자로 변환 (unix 계열)  
+os.path.normcase("C:\\\test\\\abc.jpg")  
+"C: / test / abc.jpg"  
+
+- 문자 대체  
+"c:\\\script\\\abc.jpg".replace("\\\ ","/")  
+"C:/test/abc.jpg"  
+
+- 파일크기 얻기  
+os.path.getsize(""C:\\\test\\\abc.jpg")  
+4324L  
+
+- open과 write  
+file 열기 > 쓰기 / 읽기 > file 닫기  
+> f = open(<파일이름>, "rwb")  
+f.write(<쓸것>)  
+f.close()  
+
+read = r  
+write = w  
+binary mode = b  
+읽기를 b로 할경우 읽기는 'rb', 쓰기는'wb'  
+
+추가 쓰기 'a'  
+읽고 쓰기 "r+"  
+읽고 파일 추가 "a+"  
+
+- 라인 단위로 쓰고 읽기  
+f_ = open("test\\\simple.ma", "r")  
+line_ = f_.readline()  
+while line_:  
+　　print line_,  
+　　line_ = f_.readline()  
+f_close()  
+
+- picle을 이용한 파일 쓰고 읽기  
+저장 : pickle.dump(<자료>,<파일>)  
+읽기 : pickle.load(<파일>)  
+
+> d_ = {"1234", "ab", {"aa":11} }  
+f_ = open("c:\\\test\\\test.text", "w")  
+import pickle  
+pickle.dump(d_, f_)  
+f_.close()  
+
+f_ = ("c:\\\test\\\test.text", "r")  
+r_ = pickle.load(a)  
+f_.close()  
+r_  
+{"1234", "ab", {"aa":11} }  

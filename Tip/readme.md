@@ -79,6 +79,34 @@ b 출력) [1,2,3]<br>
 - true<br>
 "aa", [1,2,3], 1<br>
 
+:large_blue_diamond:**문자열 명령실행**:large_blue_diamond:  
+- eval의 string 실행  
+>eval('1 + 2')  
+3  
+
+>eval('4 < 3')  
+False  
+
+>eval('[123, "abc"]')  
+[123, "abc"]  
+
+- exec의 string 실행  
+>exec('a = 1 + 3')  
+a  
+4  
+※ exec는 eval과 다르게 return을 하지 않는다.
+
+- 변수에 함수처럼 저장이 가능  
+c_ = '''  
+a = 4  
+for x in range(a):  
+    print(x)  
+'''  
+exec(c_)  
+0  
+1  
+2  
+3 
 ***
 #### 16. GoLang
 :large_blue_diamond:**숫자입출력 예제**:large_blue_diamond:<br>
