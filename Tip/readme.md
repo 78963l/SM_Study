@@ -57,7 +57,7 @@
 python에는 Gabage Collection이 있어 자동으로 수집하고 해제함.(java와 동일)<br>
 del(변수) 를 이용하여 지우는 함수가 있지만 실제로 메모리에서는 해제하지 않음.<br>
 하여 메모리에 문제가 생길 수 있어 None타입으로 변경 후 del함수를 사용하는 것이 바람직함.<br>
-
+* * *  
 :large_blue_diamond:**깊은복사,얕은복사(DeepCopy, ShallowCopy)**:large_blue_diamond:<br>
 1. DeepCopy<br>
 a = [1,2,3]<br>
@@ -72,13 +72,13 @@ b = copy.copy(a)<br>
 a[0] = 5<br>
 a 출력) [5,2,3]<br>
 b 출력) [1,2,3]<br>
-
+* * *
 :large_blue_diamond:**false, true 값**:large_blue_diamond:  
 - false<br>
 "", [],(), {}, 0, None<br>
 - true<br>
 "aa", [1,2,3], 1<br>
-
+* * *
 :large_blue_diamond:**문자열 명령실행**:large_blue_diamond:  
 - eval의 string 실행  
 >eval('1 + 2')  
