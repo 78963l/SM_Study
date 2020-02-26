@@ -107,7 +107,7 @@ exec(c_)
 1  
 2  
 3 
-
+* * *
 :large_blue_diamond:**줄 바꿔 쓰기**:large_blue_diamond:  
 명령어가 길어질 경우  
 > import maya.cmds as cmds  
@@ -119,11 +119,11 @@ depth=2)
 []이나 {}도 동일하다.  
 
 만약 ()[]{}와 같은 자료 안의 내용이 아닌 명령 문장은 역슬레쉬 \ 를 이용하여 줄바꾸기가 가능하다.  
-  
+* * *
 :large_blue_diamond:**한 줄에 여러 명령쓰기**:large_blue_diamond:  
 ;를 사용하면 한줄에 여러명령을 사용을 할 수 있다.  
 >num=1;print num
-  
+* * *
 :large_blue_diamond:**문자열 실행하기**:large_blue_diamond:  
 1. eval의 string 실행
 > eval('1+2')  
@@ -133,7 +133,7 @@ depth=2)
 > sum  
 > 4  
 ※ eval하고 차이점은 return을 하지 않는다.  
-
+* * *
 ***
 
 #### 16. GoLang
@@ -161,6 +161,7 @@ func main() {<br>
 3<br>
 5<br>
 출력) 입력하신 숫자는 3, 5 입니다.<br>
+* * *
 ***
 #### 17. Html  
 ***
