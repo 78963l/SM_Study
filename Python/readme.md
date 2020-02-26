@@ -907,7 +907,9 @@ while line_:
 　　line_ = f_.readline()  
 f_close()  
 
-- picle을 이용한 파일 쓰고 읽기  
+- pickle을 이용한 파일 쓰고 읽기  
+python의 기본자료를 자료형 그대로 file에 저장하고 읽는 기능이 있다.  
+따라서 python끼리 자료를 주고 받는 file을 생성할때 유용함.  
 저장 : pickle.dump(<자료>,<파일>)  
 읽기 : pickle.load(<파일>)  
 
