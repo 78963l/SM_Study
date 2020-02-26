@@ -25,31 +25,45 @@
 ***
 #### 1. Maya
 ***
+***
 #### 2. Nuke
+***
 ***
 #### 3. Houdini
 ***
+***
 #### 4. 3DEqualizer
+***
 ***
 #### 5. Tractor
 ***
+***
 #### 6. Unity3D
+***
 ***
 #### 7. Unreal
 ***
+***
 #### 8. AndroidStudio
+***
 ***
 #### 9. C
 ***
+***
 #### 10. C++
+***
 ***
 #### 11. C#  
 ***
+***
 #### 12. Java  
+***
 ***
 #### 13. JavaScript  
 ***
+***
 #### 14. TypeScript  
+***
 ***
 #### 15. Python  
 :large_blue_diamond:**메모리 관리를 따로 안해줘도 됨**:large_blue_diamond:<br>
@@ -133,9 +147,8 @@ depth=2)
 > sum  
 > 4  
 ※ eval하고 차이점은 return을 하지 않는다.  
-* * *
 ***
-
+***
 #### 16. GoLang
 :large_blue_diamond:**숫자입출력 예제**:large_blue_diamond:<br>
 package main<br><br>
@@ -161,7 +174,7 @@ func main() {<br>
 3<br>
 5<br>
 출력) 입력하신 숫자는 3, 5 입니다.<br>
-* * *
+***
 ***
 #### 17. Html  
 ***
