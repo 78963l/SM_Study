@@ -40,6 +40,22 @@
 ***
 #### 6. Unity3D
 ***
+:large_blue_diamond:**PlayerPrefs**:large_blue_diamond:<br>
+- PlayerPrefs클래스는 유니티에서 제공하는 데이터 관리 클래스.<br>
+- int, float, string, bool 타입의 변수를 저장하고 로드할 수 있다.<br>
+>PlayerPrefs.SetInt("Age", int.Parse(aa.text));<br>
+bb.text = PlayerPrefs.GetInt("Age").ToString();
+- DeleteAll : 모든 키값 삭제
+- DeleteKey : 키값 삭제
+- GetInt : 입력한 int 키값 로드
+- GetFloat : 입력한 float 키값 로드
+- GetString : 입력한 string 키값 로드
+- SetInt : 입력한 int 키값 저장
+- SetFloat : 입력한 float 키값 저장
+- SetString : 입력한 string 키값 저장
+- HasKey : 해당 키의 존재여부를 반환
+- Save : 변경된 모든 키값을 저장
+- ＊ 보안상 문제가 되므로 중요한 데이터이라면, JSON과 XML을 이용해야 한다.
 ***
 #### 7. Unreal
 ***
