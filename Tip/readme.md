@@ -56,6 +56,7 @@ bb.text = PlayerPrefs.GetInt("Age").ToString();
 - HasKey : 해당 키의 존재여부를 반환
 - Save : 변경된 모든 키값을 저장
 - ＊ 보안상 문제가 되므로 중요한 데이터이라면, JSON과 XML을 이용해야 한다.<br><br>
+  
 :large_blue_diamond:**Unity의 기본모듈을 가져오지못하는 에러**:large_blue_diamond:<br>
 >errorCode) namespace name 'UI' does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)<br>
 
