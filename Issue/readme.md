@@ -35,6 +35,13 @@
 ***
 #### 6. Unity3D
 ***
+:large_blue_diamond:**Unity의 기본모듈을 가져오지못하는 에러**:large_blue_diamond:<br>
+>errorCode) namespace name 'UI' does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)<br>
+
+※ unity의 버전을 올리거나 dll파일이 사라진 경우.<br>
+Assets -> Reimport All<br>
+현재 프로젝트를 연 unity의 버전에 따라 dll 파일이 전부 import가 되어 모듈을 가져올 수 있다.<br>
+***
 #### 7. Unreal
 ***
 #### 8. AndroidStudio
